@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionpfe.poo_av.FicheDeProjet">
+   <children>
+      <Label fx:id="lblSujet" alignment="CENTER" layoutX="173.0" layoutY="29.0" prefHeight="17.0" prefWidth="254.0" styleClass="title" text="Nom du Projet" />
+      <Label layoutX="34.0" layoutY="84.0" styleClass="subtitle" text="Travail par : " />
+      <Label fx:id="lblEtd1" layoutX="127.0" layoutY="84.0" prefHeight="21.0" prefWidth="162.0" />
+      <Label fx:id="lblEtd2" layoutX="127.0" layoutY="130.0" prefHeight="21.0" prefWidth="162.0" />
+      <Label layoutX="36.0" layoutY="172.0" styleClass="subtitle" text="Entreprise :" />
+      <Label fx:id="lblEntreprise" layoutX="127.0" layoutY="172.0" prefHeight="21.0" prefWidth="162.0" />
+      <Label layoutX="36.0" layoutY="233.0" styleClass="subtitle" text="Etat : " />
+      <Label fx:id="lblEtat" alignment="CENTER" layoutX="90.0" layoutY="254.0" prefHeight="21.0" prefWidth="236.0" />
+      <Label layoutX="307.0" layoutY="84.0" styleClass="subtitle" text="Encadrant :" />
+      <Label fx:id="lblEncadrant" layoutX="401.0" layoutY="84.0" prefHeight="21.0" prefWidth="195.0" />
+      <Label layoutX="307.0" layoutY="172.0" styleClass="subtitle" text="Rapporteur : " />
+      <Label fx:id="lblRapporteur" layoutX="401.0" layoutY="172.0" prefHeight="21.0" prefWidth="195.0" />
+      <Label layoutX="307.0" layoutY="233.0" styleClass="subtitle" text="Rapport :" />
+      <Button layoutX="407.0" layoutY="227.0" mnemonicParsing="false" onAction="#ouvrirFichier" text="Ouvrir le Fichier" />
+      <Label layoutX="34.0" layoutY="299.0" styleClass="subtitle" text="Note : " />
+      <Label fx:id="lblNote" layoutX="138.0" layoutY="299.0" prefHeight="17.0" prefWidth="140.0" text="Pas Encore" />
+      <Button layoutX="15.0" layoutY="347.0" mnemonicParsing="false" onAction="#goToPreviousPage" text="Retour" />
+      <Button fx:id="btnNoter" layoutX="528.0" layoutY="355.0" mnemonicParsing="false" onAction="#noter" text="Noter" />
+      <ProgressBar fx:id="progress" layoutX="127.0" layoutY="234.0" prefHeight="18.0" prefWidth="162.0" progress="0.0" />
+   </children>
+</AnchorPane>

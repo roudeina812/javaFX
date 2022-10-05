@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionpfe.poo_av.AffecterProjet">
+   <children>
+      <TableView fx:id="list1" layoutX="23.0" layoutY="94.0" prefHeight="250.0" prefWidth="249.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="124.0" text="Sujet " />
+          <TableColumn fx:id="col2" prefWidth="124.0" text="Entreprise" />
+        </columns>
+      </TableView>
+      <TableView fx:id="list2" layoutX="336.0" layoutY="92.0" prefHeight="250.0" prefWidth="237.0">
+        <columns>
+          <TableColumn fx:id="col3" prefWidth="120.0" text="Prenom" />
+            <TableColumn fx:id="col4" prefWidth="116.0" text="Nom" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="32.0" prefHeight="28.0" prefWidth="553.0" styleClass="title" text="Affecter des Projets" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#goToPreviousPage" text="Retour" />
+      <Button layoutX="507.0" layoutY="361.0" mnemonicParsing="false" onAction="#affecter" text="Affecter" />
+   </children>
+</AnchorPane>

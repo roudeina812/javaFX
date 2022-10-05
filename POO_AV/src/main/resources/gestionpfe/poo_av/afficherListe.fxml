@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionpfe.poo_av.AfficherListe">
+   <children>
+      <TableView fx:id="list" layoutX="79.0" layoutY="58.0" prefHeight="264.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="165.0" />
+            <TableColumn fx:id="col2" prefWidth="133.0" />
+          <TableColumn fx:id="col3" prefWidth="144.0" />
+        </columns>
+      </TableView>
+      <Button layoutX="464.0" layoutY="337.0" mnemonicParsing="false" onAction="#consulter" text="Consulter" />
+      <Button layoutX="79.0" layoutY="337.0" mnemonicParsing="false" onAction="#goToPreviousPage" text="Retour" />
+      <Label fx:id="lbl" alignment="CENTER" layoutX="79.0" layoutY="23.0" prefHeight="28.0" prefWidth="446.0" styleClass="title" text="Consulter la liste des " />
+      <Button fx:id="btnNoter" layoutX="274.0" layoutY="337.0" mnemonicParsing="false" onAction="#noter" text="Noter" />
+   </children>
+</AnchorPane>

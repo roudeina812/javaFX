@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionpfe.poo_av.Ajout">
+   <children>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="-2.0" layoutY="30.0" prefHeight="28.0" prefWidth="600.0" styleClass="title" text="Ajouter un Nouveau " />
+      <Label layoutX="82.0" layoutY="79.0" styleClass="subtitle" text="Prenom" />
+      <Label layoutX="83.0" layoutY="120.0" styleClass="subtitle" text="Nom" />
+      <Label layoutX="84.0" layoutY="168.0" styleClass="subtitle" text="CIN" />
+      <Label layoutX="84.0" layoutY="212.0" styleClass="subtitle" text="E-Mail" />
+      <TextField fx:id="txtPrenom" layoutX="183.0" layoutY="75.0" />
+      <TextField fx:id="txtNom" layoutX="183.0" layoutY="118.0" />
+      <TextField fx:id="txtCIN" layoutX="183.0" layoutY="166.0" />
+      <TextField fx:id="txtMail" layoutX="183.0" layoutY="210.0" />
+      <Button fx:id="btnAjout" layoutX="483.0" layoutY="350.0" mnemonicParsing="false" onAction="#ajout" prefHeight="36.0" prefWidth="103.0" style="-fx-background-radius: 15px;" text="Ajouter" />
+      <Label layoutX="87.0" layoutY="258.0" styleClass="subtitle" text="Photo" />
+      <ImageView fx:id="iv" fitHeight="36.0" fitWidth="32.0" layoutX="186.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="path" layoutX="227.0" layoutY="260.0" prefHeight="17.0" prefWidth="160.0" />
+      <Button layoutX="183.0" layoutY="298.0" mnemonicParsing="false" onAction="#chercher" prefHeight="36.0" prefWidth="103.0" style="-fx-background-radius: 15px;" text="Chercher" />
+      <Button layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#goToPreviousPage" prefHeight="36.0" prefWidth="103.0" style="-fx-background-radius: 15px;" text="Retour" />
+   </children>
+</AnchorPane>
